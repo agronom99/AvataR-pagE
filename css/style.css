@@ -2,7 +2,7 @@
   --main-color: #504b4b;
   --secondary-color: #756d5b;
   --font-color: rgb(255, 255, 255);
-  --link-color: #ff4e45;
+  --link-color: #c4f569;
   --gap: 15px;
 }
 
@@ -127,6 +127,12 @@ footer {
   width: var(--link-size);
 }
 
+.links img:hover {
+  opacity: 0.5;
+}
+
+
+
 .large-button {
   display: flex;
   justify-content: center;
@@ -135,7 +141,7 @@ footer {
   height: 50px;
   padding-bottom: 1px;
   border: 3px solid var(--link-color);
-  background-color: var(--font-color);
+  background-color: #59aca1;
   border-radius: 35px;
   font-size: 20px;
   font-weight: bold;
