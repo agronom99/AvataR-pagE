@@ -1,0 +1,103 @@
+
+:root {
+  --main-color: #000;
+  --secondary-color: #262626;
+  --font-color: rgb(255, 255, 255);
+  --link-color:#ff4e45;
+  --gap: 15px;
+}
+
+body,
+h1,
+h2,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: var(--link-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover, a:focus, a:active{
+  color: aqua;
+  opacity: 0.75;
+}
+
+
+html {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+}
+
+body,
+.avatar {
+  margin: 0 auto;
+}
+
+.avatar, header, main, h1, .links, .description{
+  margin-bottom: var(--gap);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-height: calc(100vh - var(--gap)*2);
+  background-color: var(--main-color);
+  padding: var(--gap);
+}
+
+header{
+  position: relative;
+}
+
+.avatar, header, main{
+  margin-bottom: var(--gap);
+
+}
+
+.avatar {
+  --avatar-size: 200px;
+
+  display: block;
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+}
+
+.nickname,
+.language,
+.description,
+h1,
+.email,
+footer {
+  text-align: center;
+}
+
+footer{
+  margin-top: auto;
+}
+
+.language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
